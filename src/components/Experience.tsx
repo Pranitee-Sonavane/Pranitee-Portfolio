@@ -4,32 +4,32 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    type: "work",
-    title: "Senior Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "2023 - Present",
-    description: "Leading development of cloud-native applications and mentoring junior developers.",
+    type: "Internship",
+    title: "Autonomous Navigation & AI Engineer Intern",
+    company: "ISAE SUPMECA Internship",
+    period: "2025 - Present",
+    description: "Developing AI-powered autonomous navigation for drones with object detection and obstacle avoidance.",
   },
   {
-    type: "work",
-    title: "Frontend Developer",
-    company: "Digital Agency Co.",
+    type: "Internship",
+    title: "Software Developer Intern",
+    company: "Vikrama Technologies",
     period: "2022 - 2023",
-    description: "Built responsive web applications using React and modern CSS frameworks.",
+    description: "Built responsive Softwares  using Java, Java Swing and MySQL ",
   },
   {
     type: "education",
-    title: "Master's in Computer Science",
-    company: "Tech University",
-    period: "2020 - 2022",
-    description: "Specialized in Web Technologies and Software Engineering.",
+    title: "B.Tech in Computer Science",
+    company: "Nagesh Karajagi Orchid College of Engineering and Technology",
+    period: "2023 - Present",
+    description: "Working on diverse projects to build technical skills and hands-on experience",
   },
   {
     type: "education",
-    title: "Bachelor's in Software Engineering",
-    company: "State University",
-    period: "2016 - 2020",
-    description: "Foundation in computer science fundamentals and programming.",
+    title: "Diploma in Information Technology",
+    company: "Shri Siddeshwar Women's Polytechnic, Solapur",
+    period: "2020 - 2023",
+    description: "Gained foundational programming knowledge and practical technical skills.",
   },
 ];
 
@@ -70,7 +70,7 @@ export const Experience = () => {
                     index % 2 === 0 ? "left-0 md:right-[-2rem]" : "left-0 md:left-[-2rem]"
                   } w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center glow`}
                 >
-                  {exp.type === "work" ? (
+                  {exp.type === "Internship" ? (
                     <Briefcase className="w-6 h-6 text-primary-foreground" />
                   ) : (
                     <GraduationCap className="w-6 h-6 text-primary-foreground" />

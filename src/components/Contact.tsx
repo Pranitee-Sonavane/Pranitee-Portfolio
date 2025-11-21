@@ -60,9 +60,9 @@ export const Contact = () => {
 
             <div className="space-y-4">
               {[
-                { icon: Mail, text: "fanaa@example.com", href: "mailto:fanaa@example.com" },
-                { icon: Phone, text: "+1 (555) 123-4567", href: "tel:+15551234567" },
-                { icon: MapPin, text: "San Francisco, CA", href: "https://maps.google.com" },
+                { icon: Mail, text: "sonavanepranitee@gmail.com", href: "mailto:sonavanepranitee@gmail.com" },
+                { icon: Phone, text: "+91 9028968755", href: "tel:+91 9028968755" },
+                { icon: MapPin, text: "Solapur, Maharashtra, India", href: "https://maps.google.com" },
               ].map((item, index) => (
                 <motion.a
                   key={index}

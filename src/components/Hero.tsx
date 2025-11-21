@@ -32,7 +32,7 @@ export const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="gradient-text">Fanaa</span>
+            <span className="gradient-text">Pranitee Sonavane</span>
           </motion.h1>
 
           <div className="text-2xl md:text-4xl font-semibold mb-8 h-20">
@@ -42,7 +42,7 @@ export const Hero = () => {
                 2000,
                 "UI/UX Designer",
                 2000,
-                "Problem Solver",
+                "Artsist Enthusiast",
                 2000,
                 "Creative Thinker",
                 2000,
@@ -94,9 +94,9 @@ export const Hero = () => {
             transition={{ delay: 1, duration: 0.8 }}
           >
             {[
-              { icon: Github, href: "https://github.com" },
-              { icon: Linkedin, href: "https://linkedin.com" },
-              { icon: Mail, href: "mailto:fanaa@example.com" },
+              { icon: Github, href: "https://github.com/Pranitee-Sonavane" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/pranitee-sonavane-2582752b2/" },
+              { icon: Mail, href: "mailto:sonavanepranitee@gmail.com" },
             ].map((social, index) => (
               <motion.a
                 key={index}

@@ -5,36 +5,50 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack marketplace with real-time updates and payment integration",
-    category: "Web",
-    tags: ["React", "Node.js", "MongoDB"],
+    title: "ArtFolio",
+    description: "A cozy little corner of the internet where I share my love for traditional art and thoughtful design.",
+    category: "Design",
+    tags: ["HTML", "CSS", "JavaScript"],
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
   },
   {
-    title: "AI Chat Application",
-    description: "Intelligent chatbot using natural language processing",
-    category: "AI",
-    tags: ["Python", "TensorFlow", "React"],
+    title: "Decentralised Science",
+    description: "Blockchain-based platform to decentralize and democratize scientific research.",
+    category: "Blockchain",
+    tags: ["React", "TypeScript", "Vite"],
     image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
   },
   {
-    title: "Portfolio Designer",
-    description: "Visual tool for creating stunning portfolio websites",
-    category: "Design",
-    tags: ["TypeScript", "Tailwind", "Framer Motion"],
+    title: "Youtube Video Transcript Summarizer",
+    description: "YSummarize is a Chrome extension that quickly summarizes YouTube videos, saving users time.",
+    category: "Web",
+    tags: ["HTML", "CSS", "Python","Flask","JavaScript","NLP"],
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative workspace with real-time synchronization",
+    title: "Ecofriendly Hybrid Dashboard",
+    description: "Dashboard displaying real-time sensor data on energy savings, power generation, and voltage.",
+    category: "Web",
+    tags: ["React", "Arduino", "Socket.IO"],
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+  },
+  {
+    title: "Travel and Tourism Management System",
+    description: "The System is a Java-based project designed to streamline the process of managing travel bookings, itineraries, and customer details",
+    category: "Software",
+    tags: ["Java", "MySQL", "Java Swing"],
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+  },
+  {
+    title: "Hope On A Plate",
+    description: "An integrated system to manage hotel operations and NGO activities efficiently.",
     category: "Web",
     tags: ["React", "Firebase", "Material-UI"],
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
   },
 ];
 
-const categories = ["All", "Web", "AI", "Design"];
+const categories = ["All", "Web", "Blockchain", "Design","Software"];
 
 export const Projects = () => {
   const ref = useRef(null);
