@@ -60,7 +60,7 @@ export const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Crafting digital experiences that blend innovation with elegance
+            Blending technology and art to craft innovative, user-friendly projects.
           </motion.p>
 
           <motion.div

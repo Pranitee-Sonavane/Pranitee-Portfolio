@@ -36,14 +36,11 @@ export const About = () => {
           >
             <div className="glass p-8 rounded-2xl hover-lift">
               <p className="text-lg leading-relaxed mb-6">
-                I'm a passionate developer who loves creating beautiful, functional, and user-centric digital experiences. With a keen eye for design and a strong technical foundation, I bridge the gap between aesthetics and functionality.
-              </p>
+                Hello, I’m Pranitee! I’m an engineering student passionate about building useful projects that solve real problems, with a special focus on user interface design.                </p>
               <p className="text-lg leading-relaxed mb-6">
-                My journey in tech has been driven by curiosity and a constant desire to learn. I specialize in modern web technologies and enjoy tackling complex problems with elegant solutions.
-              </p>
+                I’m also a creative artist, who loves sketching, painting, and exploring different forms of visual expression. Combining my technical skills with my artistic side, I strive to create projects that are not just functional, but also beautiful, engaging, and innovative.              </p>
               <p className="text-lg leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.
-              </p>
+                Always curious and full of ideas, I enjoy turning creativity into meaningful experiences.              </p>
             </div>
           </motion.div>
 
