@@ -47,7 +47,7 @@ export const Projects = () => {
       : projects.filter((p) => p.category === selectedCategory);
 
   return (
-    <section ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="projects" ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/5 to-background" />
       
       <div className="max-w-6xl mx-auto relative z-10">
@@ -106,11 +106,20 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button size="sm" variant="outline" className="glass">
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="glass"
+                    onClick={() => window.open("https://github.com", "_blank")}
+                  >
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>
-                  <Button size="sm" className="glow">
+                  <Button 
+                    size="sm" 
+                    className="glow"
+                    onClick={() => window.open("#", "_blank")}
+                  >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
                   </Button>

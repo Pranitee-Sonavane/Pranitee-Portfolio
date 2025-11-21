@@ -1,6 +1,7 @@
 import { CustomCursor } from "@/components/CustomCursor";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
@@ -14,6 +15,7 @@ const Index = () => {
       <CustomCursor />
       <ThemeToggle />
       <ScrollProgress />
+      <Navigation />
       
       <main>
         <Hero />
