@@ -10,6 +10,8 @@ const projects = [
     category: "Design",
     tags: ["HTML", "CSS", "JavaScript"],
     image: "src/images/artfolio.jpg",
+    github: "https://github.com/Pranitee-Sonavane/Pranitee-Artfolio",
+    demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
   },
   {
     title: "Decentralised Science",
@@ -17,6 +19,8 @@ const projects = [
     category: "Blockchain",
     tags: ["React", "TypeScript", "Vite"],
     image: "src/images/decentralised.jpg",
+    github: "https://github.com/Pranitee-Sonavane/Decentralized-Science",
+    demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
   },
   {
     title: "Youtube Video Transcript Summarizer",
@@ -24,6 +28,8 @@ const projects = [
     category: "Web",
     tags: ["HTML", "CSS", "Python","Flask","JavaScript","NLP"],
     image: "src/images/youtube.jpg",
+    github: "https://github.com/Pranitee-Sonavane/YSummarize",
+    demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
   },
   {
     title: "Ecofriendly Hybrid Dashboard",
@@ -31,14 +37,17 @@ const projects = [
     category: "Web",
     tags: ["React", "Arduino", "Socket.IO"],
     image: "src/images/ecofriendly.jpg",
+    github: "https://github.com/Pranitee-Sonavane/Hybrid-Ecofriendly",
+    demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
   },
   {
     title: "Travel and Tourism Management System",
     description: "The System is a Java-based project designed to streamline the process of managing travel bookings, itineraries, and customer details",
     category: "Software",
     tags: ["Java", "MySQL", "Java Swing"],
-    image: "src/images/tourism.jpg"
-    ,
+    image: "src/images/tourism.jpg",
+    github: "https://github.com/Pranitee-Sonavane/Travel-And-Tourism-Management-System",
+    demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
   },
   {
     title: "Hope On A Plate",
@@ -46,6 +55,8 @@ const projects = [
     category: "Web",
     tags: ["React", "Firebase", "Material-UI"],
     image: "src/images/hopeonaplate.jpg",
+     github: "https://github.com/Pranitee-Sonavane/Hope-On-A-Plate",
+    demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
   },
 ];
 
@@ -121,24 +132,25 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="glass"
-                    onClick={() => window.open("https://github.com", "_blank")}
-                  >
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    className="glow"
-                    onClick={() => window.open("#", "_blank")}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </Button>
-                </div>
+  <Button 
+    size="sm" 
+    variant="outline" 
+    className="glass"
+    onClick={() => window.open(project.github, "_blank")}
+  >
+    <Github className="w-4 h-4 mr-2" />
+    Code
+  </Button>
+  <Button 
+    size="sm" 
+    className="glow"
+    onClick={() => window.open(project.demo, "_blank")}
+  >
+    <ExternalLink className="w-4 h-4 mr-2" />
+    Live Demo
+  </Button>
+</div>
+
               </div>
             </motion.div>
           ))}
