@@ -19,7 +19,7 @@ export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent!",
+      title: "Message Sent! ✨",
       description: "Thank you for reaching out. I'll get back to you soon.",
     });
     setFormData({ name: "", email: "", message: "" });
@@ -32,7 +32,7 @@ export const Contact = () => {
   };
 
   return (
-    <section ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="contact" ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
       
       <div className="max-w-6xl mx-auto relative z-10">
@@ -60,12 +60,15 @@ export const Contact = () => {
 
             <div className="space-y-4">
               {[
-                { icon: Mail, text: "fanaa@example.com" },
-                { icon: Phone, text: "+1 (555) 123-4567" },
-                { icon: MapPin, text: "San Francisco, CA" },
+                { icon: Mail, text: "fanaa@example.com", href: "mailto:fanaa@example.com" },
+                { icon: Phone, text: "+1 (555) 123-4567", href: "tel:+15551234567" },
+                { icon: MapPin, text: "San Francisco, CA", href: "https://maps.google.com" },
               ].map((item, index) => (
-                <motion.div
+                <motion.a
                   key={index}
+                  href={item.href}
+                  target={item.href.startsWith('http') ? "_blank" : undefined}
+                  rel={item.href.startsWith('http') ? "noopener noreferrer" : undefined}
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
@@ -75,7 +78,7 @@ export const Contact = () => {
                     <item.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <span className="text-lg">{item.text}</span>
-                </motion.div>
+                </motion.a>
               ))}
             </div>
           </motion.div>

@@ -4,8 +4,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-accent/20 animate-gradient" />
       
@@ -62,11 +69,20 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <Button size="lg" className="glass glow hover-lift group">
+            <Button 
+              size="lg" 
+              className="glass glow hover-lift group"
+              onClick={() => scrollToSection("projects")}
+            >
               View Projects
               <ArrowDown className="ml-2 group-hover:translate-y-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="glass hover-lift">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="glass hover-lift"
+              onClick={() => scrollToSection("contact")}
+            >
               Contact Me
             </Button>
           </motion.div>
@@ -78,13 +94,15 @@ export const Hero = () => {
             transition={{ delay: 1, duration: 0.8 }}
           >
             {[
-              { icon: Github, href: "#" },
-              { icon: Linkedin, href: "#" },
-              { icon: Mail, href: "#" },
+              { icon: Github, href: "https://github.com" },
+              { icon: Linkedin, href: "https://linkedin.com" },
+              { icon: Mail, href: "mailto:fanaa@example.com" },
             ].map((social, index) => (
               <motion.a
                 key={index}
                 href={social.href}
+                target={social.href.startsWith('http') ? "_blank" : undefined}
+                rel={social.href.startsWith('http') ? "noopener noreferrer" : undefined}
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-3 glass rounded-full hover:glow smooth-transition"
