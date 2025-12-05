@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
+
+
 const milestones = [
-  { year: "2024", title: "Senior Developer", description: "Leading innovative projects" },
-  { year: "2023", title: "Full Stack Role", description: "Expanded technical expertise" },
-  { year: "2022", title: "First Major Project", description: "Launched successful application" },
-  { year: "2021", title: "Started Journey", description: "Began coding adventure" },
+  { year: "2025", title: "National Hackathons", description: "Participated in 3 national hackathons in 1 year." },
+  { year: "2023", title: "Dipex Project Selection", description: "Project selected for DIPEX-State Level Project Exhibition." },
+  { year: "2022", title: "Paper Presentation Award", description: "Won 2nd place in a national level paper presentation." },
+  { year: "2021", title: "Started Coding Journey", description: "Began exploring programming and developing small projects" },
 ];
+
 
 export const About = () => {
   const ref = useRef(null);
