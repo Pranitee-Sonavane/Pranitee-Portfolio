@@ -32,7 +32,7 @@ const projects = [
 		tags: ["HTML", "CSS", "Python", "Flask", "JavaScript", "NLP"],
 		image: "src/images/youtube.jpg",
 		github: "https://github.com/Pranitee-Sonavane/YSummarize",
-		demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
+		demo: "/videos/ysummarize.mp4",
 	},
 	{
 		title: "Ecofriendly Hybrid Dashboard",
@@ -52,7 +52,7 @@ const projects = [
 		tags: ["Java", "MySQL", "Java Swing"],
 		image: "src/images/tourism.jpg",
 		github: "https://github.com/Pranitee-Sonavane/Travel-And-Tourism-Management-System",
-		demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
+		demo: "",
 	},
 	{
 		title: "Hope On A Plate",
@@ -62,7 +62,7 @@ const projects = [
 		tags: ["React", "Firebase", "Material-UI"],
 		image: "src/images/hopeonaplate.jpg",
 		github: "https://github.com/Pranitee-Sonavane/Hope-On-A-Plate",
-		demo: "/videos/ecofriendly hopeonaplate.mp4",
+		demo: "/videos/hopeonaplate.mp4",
 	},
 ];
 
@@ -169,16 +169,18 @@ export const Projects = () => {
 										<Github className="w-4 h-4 mr-2" />
 										Code
 									</Button>
-									<Button
-										size="sm"
-										className="glow"
-										onClick={() => window.open(project.demo, "_blank")}
-									>
-										<ExternalLink className="w-4 h-4 mr-2" />
-										{project.demo.endsWith(".mp4")
-											? "Watch Video"
-											: "Live Demo"}
-									</Button>
+									{project.demo && (
+										<Button
+											size="sm"
+											className="glow"
+											onClick={() => window.open(project.demo, "_blank")}
+										>
+											<ExternalLink className="w-4 h-4 mr-2" />
+											{project.demo.endsWith(".mp4")
+												? "Watch Video"
+												: "Live Demo"}
+										</Button>
+									)}
 								</div>
 							</div>
 						</motion.div>
