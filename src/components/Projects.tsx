@@ -12,7 +12,7 @@ const projects = [
 		tags: ["HTML", "CSS", "JavaScript"],
 		image: "/images/artfolio.jpg",
 		github: "https://github.com/Pranitee-Sonavane/Pranitee-Artfolio",
-		demo: "https://pranitee-sonavane.github.io/Pranitee-Artfolio/",
+		demo: "https://artfolio-mauve.vercel.app/",
 	},
 	{
 		title: "Decentralised Science",
