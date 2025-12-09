@@ -82,7 +82,7 @@ export const Contact = () => {
             <div className="space-y-4">
               {[
                 { icon: Mail, text: "sonavanepranitee@gmail.com", href: "mailto:sonavanepranitee@gmail.com" },
-                { icon: Phone, text: "+91 9028968755", href: "tel:+91 9028968755" },
+                { icon: Phone, text: "+91 -", href: "tel:+91 9028968755" },
                 { icon: MapPin, text: "Solapur, Maharashtra, India", href: "https://maps.google.com" },
               ].map((item, index) => (
                 <motion.a
