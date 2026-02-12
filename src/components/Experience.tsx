@@ -6,7 +6,7 @@ const experiences = [
   {
     type: "Internship",
     title: "UI/UX Designer",
-    company: "Suprazo Technologies",
+    company: "SuPrazo Technologies",
     period: "January 2026 - Present",
     description: "Designing intuitive, user-centered interfaces to enhance usability and overall user experience.",
   },
