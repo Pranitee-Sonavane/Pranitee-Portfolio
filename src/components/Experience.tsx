@@ -5,6 +5,13 @@ import { Briefcase, GraduationCap } from "lucide-react";
 const experiences = [
   {
     type: "Internship",
+    title: "UI/UX Designer",
+    company: "Suprazo Technologies",
+    period: "January 2026 - Present",
+    description: "Designing intuitive, user-centered interfaces to enhance usability and overall user experience.",
+  },
+  {
+    type: "Internship",
     title: "Autonomous Navigation & AI Engineer Intern",
     company: "ISAE SUPMECA Internship",
     period: "2025 - Present",
